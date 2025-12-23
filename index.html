@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator - 表情包生成器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🤪 表情包生成器</h1>
+        
+        <div class="editor-layout">
+            <div class="canvas-container">
+                <canvas id="memeCanvas" width="500" height="500"></canvas>
+                <p class="hint">如果没有上传图片，默认是一块白板哦</p>
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label>1. 上传图片</label>
+                    <input type="file" id="imageInput" accept="image/*">
+                </div>
+
+                <div class="control-group">
+                    <label>2. 顶部文字</label>
+                    <input type="text" id="topText" placeholder="当我发现代码..." value="当我发现代码能跑时">
+                </div>
+
+                <div class="control-group">
+                    <label>3. 底部文字</label>
+                    <input type="text" id="bottomText" placeholder="我就不敢动它了" value="我就绝对不去碰它">
+                </div>
+
+                <div class="control-group">
+                    <label>文字大小 (px)</label>
+                    <input type="range" id="fontSize" min="20" max="100" value="40">
+                </div>
+
+                <button id="downloadBtn" class="btn-primary">⬇️ 下载表情包</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
