@@ -13,4 +13,4 @@
 
 1. 克隆本项目：
    bash
-   git clone [https://github.com/your-username/meme-generator.git](https://github.com/your-username/meme-generator.git)
+   git clone [https://github.com/shine85/Meme-Generator.git](https://github.com/shine85/Meme-Generator.git)
